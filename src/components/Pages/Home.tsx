@@ -8,25 +8,36 @@ import VideoPath from '../../assets/images/star.mp4';
 import { Link } from 'react-router-dom';
 
 
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
+
 const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
     background-size: cover;
+    animation: ${fadeIn} 1s ease-in;
 `;
 
 const Text = styled.h1`
     font-size: 2.6rem;
     color: white;
-    margin-right: 10px;
     white-space: nowrap;
+    animation: ${fadeIn} 1s ease-in;
 `;
 
 const SubText = styled.p`
     font-size: 1.2rem;
     color: white;
-    max-width: 1000px;
+    max-width: 900px;
+    animation: ${fadeIn} 1s ease-in;
 `;
 
 const Video = styled.video`
@@ -55,10 +66,10 @@ const floatingAnimation = keyframes`
 `;
 
 const FloatingImage = styled.img`
-    width: 400px;
+    width: 330px;
     height: 300px;
     border-radius: 50%;
-    margin-left: 20vw;
+    margin-left: 10vw;
     animation: ${floatingAnimation} 3s ease-in-out infinite;
     opacity: 0.7;
 `;
@@ -71,6 +82,7 @@ const Ss = styled.div`
     top: calc(50% + -3vw);
     transform: translateY(-50%);
     width: 2.20%;
+    animation: ${fadeIn} 1s ease-in;
 `;
 
 const Sns = styled.h3`

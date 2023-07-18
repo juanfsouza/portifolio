@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     element: <Home />
   },
   {
-    path: 'https://www.youtube.com/results?search_query=typescript+vite+',
+    path: '',
     element: <About />
   }
 

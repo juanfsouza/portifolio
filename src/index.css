@@ -5,11 +5,33 @@
 
   color-scheme: light dark;
   color: rgba(7, 7, 7, 0.87);
-  background-color: #000000;
+  background-color: #69318588;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  
+  /* Barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
 }
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background-color: #31313159;
+   /* Cor de fundo da barra de rolagem */
+}
+
+/* "Polegar" da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background-color: #5a595994; /* Cor do "polegar" da barra de rolagem */
+}
+
+/* "Polegar" da barra de rolagem quando estiver sendo arrastado */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff; /* Cor do "polegar" da barra de rolagem ao passar o mouse */
+}
+}
+
